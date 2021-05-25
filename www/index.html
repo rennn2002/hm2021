@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jquery-3.6.0.slim.min.js"></script>
     <script src="javascript.js"></script>
 
@@ -51,6 +52,9 @@
         <ul>
           <li><a href="#event" class="top_event">EVENT</a></li>
           <li><a href="#team" class="top_team">TEAM</a></li>
+        </ul>
+        <ul>
+          <li><a id="header_apply-form" href="https://forms.gle/dp5JGRdTWBNfAzj36">申し込みはこちら</a></li>
         </ul>
       </div>
       <div class="top_text">
@@ -97,14 +101,14 @@
         </tr>
         <tr style="color: grey; font-size: min(3.5vw, 18px); font-weight: normal;">
           <td style="padding-top: 15px;">医学知識、アイデア、ソリューションを考案</td>
-          <td style="padding-top: 15px;">エンジニアリングスキルを用いてデモを作成</td>
+          <td style="padding-top: 15px;">エンジニアリングスキルを用いてデモを作成<br>開発を楽しみましょう！</td>
           <td style="padding-top: 15px;">グループのアイデアを異なった視点から評価</td>
         </tr>
       </table>
       <br></br>
       <div class="member-detail">
         <div>医学生：テクノロジー、ヘルスケア等々医療とテクノロジーに関心のある方を募集します。</div>
-        <div><br>メイカー：アイデアを形にできる！、ものづくりが大好きだ！そんなメイカーを募集します。ハードウェア、ソフトウェアかかわらず実現の手助けをしませんか？</div>
+        <div><br>メイカー：アイデアを形にできる！、ものづくりが大好きだ！そんなメイカーを募集します。ハードウェア、ソフトウェアかかわらず実現の手助けをしませんか？<br>集中開発でのスキルアップや普段関わる機会が少ない医学生と出会えるチャンスです！</div>
         <div><br>プロポーザー：学生、デザイナー、どんな方でも構いません。医療とテクノロジーに興味がある方ならどなたでも参加できます。</div>
         <br>
       </div>
@@ -121,7 +125,7 @@
         <br><p>※感染状況により変更となる可能性があります。</p>
       </div>
       <div class="apply-form">
-          <b><a href="https://forms.gle/dp5JGRdTWBNfAzj36">申し込みはこちら</a></b>
+          <b><a href="https://forms.gle/dp5JGRdTWBNfAzj36">申し込みはこちから！もちろん参加費は無料です！</a></b>
       </div>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.1882258593763!2d139.7600043474974!3d35.702438451961896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89b2b9bdc6232081!2z6aCG5aSp5aCC5aSn5a2mMTDlj7fppKg!5e0!3m2!1sen!2sjp!4v1620359862423!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -129,23 +133,94 @@
     </div>
     <div class="program">
       <h2>プログラム</h2>
-      <img srtc=>
+      <img src="img/program.png" style="width:100%;">
     </div>
     <div class="guest">
-      <h2>ゲスト</h2>
-      <br>
-      Comming soon...
+      <a id="guest">
+        <h2>ゲスト</h2>
+      </a>
+      <table align="center">
+          <!---ゲスト1段目--->
+        <tr>
+          <!---ゲスト写真--->
+          <td>
+            <a href="#popup1"><img src="img/kota.jpg" class="kota"></a>
+            <div id="popup1" class="overlay">
+              <div class="popup">
+                <h2>齋藤　皓太 氏</h2>
+                <a class="close" href="#guest">&times;</a>
+                <div class="content">
+                  <img src="img/kota.jpg" class="icon-detail">
+                  大学生限定プログラミングコミュニティGeekSalon事業責任者。2017年1月 大学で学ぶプログラミングの難しさに疑問を感じ、GeekSalonを立ち上げる。
+2017年3月東京大学工学部卒業。2021年5月現在、GeekSalonはのべ4200名もの受講生・卒業生を輩出し、全国７拠点にまで規模拡大。
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <a class="button" href="#popup2"><img src="img/masayuki.jpg" class="teramoto"></a>
+            <div id="popup2" class="overlay">
+            	<div class="popup">
+            		<h2>寺本　将行 氏</h2>
+            		<a class="close" href="#guest">&times;</a>
+            		<div class="content">
+                  <img src="img/masayuki.jpg" class="icon-detail">
+                  大阪大学医学部医学科卒/医師/一般社団法人inochi未来プロジェクト 理事。
+      学生時代より公衆衛生や予防医療の分野に携わる。当時の途上国への留学経験を機にinochi学生プロジェクトを立ち上げ、代表を務めた。ハーバード大学への留学、ダボス会議Global Shapers選出、日本学生支援機構大賞受賞など様々な実績を残す。卒後大阪大学附属病院、WHO、ハーバード大学院など。
+            		</div>
+            	</div>
+            </div>
+          </td>
+          <td>
+            <a href="#popup3"><img src="img/zen.jpg" class="zen"></a>
+            <div id="popup3" class="overlay">
+              <div class="popup">
+                <h2>溝口　然 氏</h2>
+                <a class="close" href="#guest">&times;</a>
+                <div class="content">
+                  <img src="img/zen.jpg" class="icon-detail">
+                  熊本県人吉市出身。2016年に高校生向け進学支援事業を立ち上げ、翌17年に法人化、奨学金の設立やプログラムの企画運営に取り組む。2021年よりインキュベイトファンドに参画。
+                  事業開発アナリストとして新規投資先の発掘等に従事。慶應義塾大学法学部卒。
+                </div>
+              </div>
+            </div>
+          </td>
+      </tr>
+      <tr>
+        <td class="job">GeekSalon事業責任者</td>
+
+        <td class="job">医師/一般社団法人inochi未来プロジェクト 理事</td>
+
+        <td class="job">Incubate Fund</td>
+      </tr>
+      <tr>
+        <!---ゲスト名前--->
+        <td class="member">齋藤　皓太 氏</td>
+
+        <td class="member">寺本　将行 氏</td>
+
+        <td class="member">溝口　然 氏</td>
+      </tr>
+
+      </table>
     </div>
     <div class="team">
       <a id="team">
         <h2>チーム</h2>
       </a>
       <table align="center">
+        <!---1段目--->
         <tr>
-          <td><img src="img/ren.jpg" class="ren"></td>
-          <td><img src="img/sana.jpg" class="sana"></td>
-          <td><img src="img/yui.jpg" class="yui"></td>
-          <td><img src="img/rina.jpg" class="rina"></td>
+          <td><a href="https://www.dibiz.com/n11ren21"><img src="img/ren.jpg" class="ren"></a></td>
+          <td><a href="https://www.dibiz.com/sanaasami0926"><img src="img/sana.jpg" class="sana"></a></td>
+          <td><a href="https://www.dibiz.com/snowdaisyyui"><img src="img/yui.jpg" class="yui"></a></td>
+          <td><a href="https://www.dibiz.com/riuniv8"><img src="img/rina.jpg" class="rina"></a></td>
+        </tr>
+        <tr class="univ">
+          <td style="font-size:1.2vw">聖マリアンナ医科大学医学部1年</td>
+          <td style="font-size:1.2vw">順天堂大学医学部1年</td>
+          <td style="font-size:1.2vw">国際医療福祉大学医学部2年</td>
+          <td style="font-size:1.2vw">慶應義塾大学医学部1年</td>
         </tr>
         <tr>
           <td class="member">REN</td>
@@ -153,8 +228,12 @@
           <td class="member">YUI</td>
           <td class="member">RINA</td>
         </tr>
+        <!---2段目--->
         <tr>
           <td><img src="img/souta.jpg" class="souta"></td>
+        </tr>
+        <tr class="univ">
+          <td style="font-size:1.2vw">東京大学理科3類1年</td>
         </tr>
         <tr>
           <td class="member">SOUTA</td>
@@ -174,6 +253,9 @@
     <footer>
       <div class="copyright">©HACKING MEDICINE 2021, ALL RIGHTS RESERVED.</div>
       <dev class="contact"><a href="mailto:inochihm21&#64;gmail.com">contact: inochihm21&#64;gmail.com</a></dev>
+      <div class="social" style="padding-top: 10px;">
+        <a href="https://twitter.com/2021Hacking" class="fa fa-twitter"></a>
+      </div>
     </footer>
   </body>
 </html>

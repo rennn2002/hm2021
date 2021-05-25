@@ -58,14 +58,16 @@ ul {
 }
 
 ul li {
-  padding: 40px 30px 20px 40px;
+  padding: 20px 30px 20px 20px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   }
 
 ul li a {
   text-decoration: none;
-   color: white;
+  color: white;
+  text-align:center;
+  padding:20px 0;
 }
 
 .top {
@@ -89,6 +91,15 @@ ul li a {
   font-family: 'Noto Sans JP', sans-serif;
   color: white;
   transition: top 2s ease 0s, opacity 2s ease 0s;
+}
+
+#header_apply-form {
+  border-radius: 10px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+  padding:20px 5px;
 }
 
 #top_text_ctr {
@@ -269,6 +280,113 @@ img.proposer {
   font-size: min(3.5vw, 25px);
   color: white;
 }
+
+img.teramoto {
+  width: 20vw;
+  padding: 20px;
+  border-radius: 50%
+}
+img.kota {
+  width: 20vw;
+  padding: 20px;
+  border-radius: 50%
+}
+img.zen {
+  width: 20vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  color: #333;
+  text-align: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(1vw, 25px);
+  padding: 10px auto;
+  overflow: auto;
+  text-align: center;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.job {
+  font-family: 'Open Sans', sans-serif;
+  font-size: min(2vw, 20px);
+  color: gray;
+}
+
+img.icon-detail {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+  .popup .content {
+    color: #333;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(3vw, 25px);
+    padding: 10px auto;
+    overflow: auto;
+    text-align: center;
+  }
+}
+
 .map {
 position: relative;
 padding-bottom: 56.25%;
@@ -293,7 +411,7 @@ height: 100%;
   font-family: 'Yantramanav', sans-serif;
   font-size: min(3.5vw, 25px);
   color: white;
-  background-color: black;
+  background-color: white;
 }
 
 .program h2 {
@@ -301,7 +419,7 @@ height: 100%;
   text-align: center;
   font-family: 'Yantramanav', sans-serif;
   font-size: min(3.5vw, 25px);
-  color: white;
+  color: black;
 }
 
 .team {
@@ -356,9 +474,24 @@ table {
 
 }
 
+.univ {
+  color:grey;
+}
 .member {
   font-family: 'Open Sans', sans-serif;
   font-size: min(3.5vw, 25px);
+}
+
+.member a{
+  text-decoration: none;
+  color: white;
+  transition: all .5s;
+}
+
+.member a:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  opacity: 0.7;
 }
 
 .why {
@@ -394,4 +527,22 @@ footer {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: black;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
