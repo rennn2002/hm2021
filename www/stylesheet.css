@@ -196,6 +196,22 @@ img.date {
   color: white;
   }
 
+  .inochi {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(2.8vw, 25px);
+    color: white;
+  }
+
+  .inochi h2{
+      padding: 2rem 0;
+      text-align: center;
+      font-family: 'Yantramanav', sans-serif;
+      font-size: min(3.5vw, 25px);
+      color: white;
+    }
+
 .topic {
   padding: 0rem 0;
   text-align: center;
@@ -286,16 +302,35 @@ img.teramoto {
   padding: 20px;
   border-radius: 50%
 }
+
+
+img.teramoto:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
+}
+
 img.kota {
   width: 20vw;
   padding: 20px;
   border-radius: 50%
 }
+
+img.kota:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
+}
+
 img.zen {
   width: 20vw;
   padding: 20px;
   border-radius: 50%
 }
+
+img.zen:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
+}
+
 
 .overlay {
   position: fixed;
@@ -444,10 +479,21 @@ img.ren {
   border-radius: 50%
 }
 
+img.ren:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
+}
+
+
 img.sana {
   width: 15vw;
   padding: 20px;
   border-radius: 50%
+}
+
+img.sana:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
 }
 
 img.yui {
@@ -456,10 +502,21 @@ img.yui {
   border-radius: 50%
 }
 
+img.yui:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
+}
+
+
 img.rina {
   width: 15vw;
   padding: 20px;
   border-radius: 50%
+}
+
+img.rina:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
 }
 
 img.souta {
@@ -467,6 +524,12 @@ img.souta {
   padding: 20px;
   border-radius: 50%
 }
+
+img.souta:hover {
+  background-color: #222;
+  transition: background-color 0.2s;
+}
+
 
 table {
   margin-left: auto;
@@ -494,6 +557,62 @@ table {
   opacity: 0.7;
 }
 
+.counterplan {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
+}
+
+.counterplan h2{
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(3.5vw, 25px);
+    color: white;
+    text-align: center;
+  }
+
+.description p {
+  text-align: left;
+  marigin: 0 auto;
+  align: middle;
+}
+
+img.icon {
+  width: min(10vw, 100px);
+  padding: 20px;
+}
+
+.questions {
+  min-width: 80vw;
+}
+
+.question-fields {
+  padding: 15px;
+  font-size: min(2vw, 20px);
+  background: darkseagreen;
+  border-radius: 40px 0 40px 0; /*左上,右下に40px*/
+  margin: 30px;
+}
+
+.faq {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
+}
+
+.faq h2{
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(3.5vw, 25px);
+    color: white;
+  }
+
 .why {
   padding: 2rem 0;
   text-align: center;
@@ -510,6 +629,7 @@ table {
   font-size: min(3.5vw, 25px);
   color: white;
 }
+
 footer {
     width: 100%;
     height: 50px;
