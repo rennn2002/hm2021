@@ -238,7 +238,6 @@ img.date {
   background-color: #9A9A9A;
 }
 
-
 .apply-form {
  padding: 15px 20px;
  text-decoration: none;
@@ -394,6 +393,31 @@ img.zen:hover {
   position: relative;
   transition: all 5s ease-in-out;
 }
+.popup-tile {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup-tile .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup-tile .close:hover {
+  color: #06D85F;
+}
+.popup-tile img {
+  width: 100%;
+}
 .job {
   font-family: 'Open Sans', sans-serif;
   font-size: min(2vw, 20px);
@@ -455,6 +479,16 @@ height: 100%;
   font-family: 'Yantramanav', sans-serif;
   font-size: min(3.5vw, 25px);
   color: black;
+}
+
+.program-tiles p {
+  display: inline-block;
+}
+
+.tile-deteil {
+  padding: 15px;
+  background: #A5E0C8;
+  margin: 20px;
 }
 
 .team {
